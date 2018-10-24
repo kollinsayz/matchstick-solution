@@ -35,7 +35,7 @@
 <body class="fixed-header menu-pin">
 <div class="register-container full-height sm-p-t-30">
 <div class="d-flex justify-content-center flex-column full-height ">
-<img src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">
+<img src="assets/img/logo-dark.svg" alt="logo" data-src="assets/img/logo-dark.svg" data-src-retina="assets/img/logo-dark.svg" width="200">
 <h3>Matchstick Solution does all the hard work so you can focus on your work</h3>
 <p>
 Sign in with <a href="register.html#" class="text-info">Google</a>
@@ -43,9 +43,18 @@ Sign in with <a href="register.html#" class="text-info">Google</a>
 <form id="form-register" class="p-t-15" role="form" action="index.html">
 <div class="row">
 <div class="col-md-12">
-<div class="form-group form-group-default">
+<div class="form-group form-group-default input-group">
+<div class="cs-input-group-addon input-group-addon d-flex">
+<select class="cs-select cs-skin-slide cs-transparent" data-init-plugin="cs-select">
+<option data-countryCode="UG" value="256">Uganda (+256)</option>
+</select>
+</div>
+<div class="form-input-group flex-1">
 <label>Mobile Number</label>
-<input type="text" name="phone" placeholder="Enter mobile number" class="form-control" required>
+<div class="controls">
+<input type="text" id="phone" name="mobile_number" placeholder="Enter mobile number" class="form-control" required>
+</div>
+</div>
 </div>
 </div>
 </div>
